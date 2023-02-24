@@ -11,8 +11,6 @@ for _ in range(n):
 
 for row in range(n):
     for col in range(m):
-        value = A[row][col]+ B[row][col]
-        print(value,end=' ')
+        value = A[row][col] + B[row][col]
+        print(value, end=' ')
     print()
-    
-    
