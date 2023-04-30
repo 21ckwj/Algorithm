@@ -14,15 +14,13 @@ drow = [2,2,-2,-2,1,1,-1,-1]
 dcol = [1,-1,1,-1,2,-2,2,-2]
 
 cnt = 0
-for r in drow:
-    for c in dcol:
-        nrow = row + r
-        ncol = col + c
-        print(nrow,ncol)
+for i in range(len(drow)):
+    nrow = row + drow[i]
+    ncol = col + dcol[i]
+    print(nrow,ncol)
     if nrow>8 or ncol>8 or nrow<1 or ncol<1:
         continue
     cnt += 1
-    print(cnt)
 print(cnt)
 
 
