@@ -8,6 +8,6 @@ for i in range(1,len(array)):
         if array[j] < array[j-1]:
             array[j], array[j-1] = array[j-1],array[j]
         # 앞의 숫자가 더 작다면 그대로
-        else: 
+        else:
             break
 print(array)
