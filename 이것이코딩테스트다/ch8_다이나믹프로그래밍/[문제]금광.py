@@ -1,9 +1,15 @@
+# array[i][j] : i행 j열 존재하는 금의 양
+# dp[i][j] : i행 j열까지의 최적의 해(얻을 수 있는 금의 최댓값)
+# 점화식
+# dp[i][j] = array[i][j] + max(dp[i-1][j-1], dp[i][j-1], dp[i+1][j-1])
+
 # 테스트 케이스 입력
 for tc in range(int(input())):
     n,m = map(int,input().split())
     array = list(map(int,input().split()))
 
     # 다이나믹 프로그래밍을 위한 2차원 dp테이블 초기화
+    # ??
     dp = []
     index = 0
     for i in range(n):
