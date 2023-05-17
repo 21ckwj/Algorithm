@@ -12,12 +12,3 @@
 #         h -= b
 
 # print(cnt)
-
-a,b,v = map(int,input().split())
-
-cnt = 0
-while v > 0:
-    cnt+=1
-    v -= a-b
-
-print(v)
