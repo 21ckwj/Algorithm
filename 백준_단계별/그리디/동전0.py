@@ -1,0 +1,13 @@
+# 필요한 동전의 최솟값
+
+n, k = map(int,input().split())
+
+coins = [int(input()) for _ in range(n)]
+coins.reverse()
+
+cnt = 0
+for coin in coins:
+    cnt += k//coin
+    k = k%coin
+
+print(cnt)
